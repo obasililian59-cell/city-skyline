@@ -1,0 +1,401 @@
+:root {
+  --background: brown;
+  --sky-bg: linear-gradient(180deg, #bfdbfe 0%, #60a5fa 70%, #1e40af 100%);
+  --sun: radial-gradient(circle,#fcd34d 0%,#f59e0b 70%, #d97706 100%);
+  --roof-blue:#4a90e2;
+  --roof-2-color: #2a4470;
+  --win-1-color: #bfdbfe;
+  --win-2-color: linear-gradient(to top, #4a90e2 25%, #bfdbfe );
+  --antena: lightgray;
+  --building-1-grad: linear-gradient(to bottom, #2c3e50, #1a252f);
+  --building-2-grad: linear-gradient(to bottom, #34495e, #2c3e50);
+  --building-3-grad: linear-gradient(#3b5998,#2a4470);
+  --building-4-grad: linear-gradient(to bottom, #2f3640, #1b2025);
+  --building-5-grad: linear-gradient(to bottom, #4b6584, #3b5470);
+  --building-6-grad: linear-gradient(to bottom, #1e272e, #0f1417);
+}
+
+* {
+ box-sizing: border-box;
+}
+
+.neighbourhood {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: var(--sky-bg);
+}
+
+.sun {
+  height: 10%;
+  width: 20%;
+  background: var(--sun);
+  border-radius: 100%;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  box-shadow: 30px 30px 55px 55px #fcd34d;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background: var(--background);
+  filter: brightness(40%);
+}
+
+
+.building-1 {
+  position: absolute;
+  height: 60%;
+  width: 20%;
+  bottom: 0%;
+  left: 5%;
+  z-index: 3;
+  background: var(--building-1-grad);
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+}
+
+.roof-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15%;
+  height: 50%;
+  position: absolute;
+  top: 34%;
+  left: 8%;
+  z-index: 2;
+}
+
+.roof {
+  width: 100%;
+  height: 15%;
+  background: var(--roof-blue);
+}
+
+.anten {
+  position: absolute;
+  top:-8%;
+  width: 5%;
+  height: 8%;
+  background: var(--roof-blue);
+}
+
+.an-dot {
+  position: absolute;
+  top: -12%;
+  width: 15%;
+  height: 5%;
+  background: var(--roof-blue);
+  border-radius: 100%;
+}
+
+.b1-wrap {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+  height: 80%;
+  z-index: 5;
+}
+
+.b1 {
+  width: 100%;
+  height: 10%;
+  background: var(--roof-blue);
+}
+
+.building-2 {
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  z-index: 6;
+  left: 30%;
+  top: 70%;
+  background: var(--building-2-grad);
+}
+
+.ro-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -26%;
+  left: 7%;
+  width: 80%;
+  height: 30%;
+  z-index: -1;
+}
+
+.roof-1 {
+  width: 70%;
+  height: 30%;
+  background: var(--roof-2-color);
+}
+
+.roof-1a {
+  width: 80%;
+  height: 30%;
+  background: var(--roof-2-color);
+}
+
+.roof-1b {
+  width: 95%;
+  height: 30%;
+  background: var(--roof-2-color);
+}
+
+.win2 {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  top: 65%;
+  right: 0;
+  z-index: 1;
+  background: var(--win-1-color);
+}
+
+.win2-1 {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  right: 0;
+  top: 15%;
+  background: var(--win-1-color);
+}
+
+.win2-2 {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  top: 40%;
+  right: 0;
+  background: var(--win-1-color);
+}
+
+.win2-3 {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  height: 10%;
+  background: var(--win-1-color);
+}
+
+.win2-4 {
+  position: absolute;
+  top: 40%;
+  width: 20%;
+  height: 10%;
+  background: var(--win-1-color);
+}
+
+.win2-5 {
+  position: absolute;
+  top: 65%;
+  width: 20%;
+  height: 10%;
+  background: var(--win-1-color);
+}
+
+.building-3 {
+  position: absolute;
+  height: 65%;
+  width: 20%;
+  top: 35%;
+  left: 20%;
+  z-index: 1;
+  background: var(--building-3-grad);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.roof-2 {
+  position: absolute;
+  top: -22%;
+  left: -5%;
+  z-index: -1;
+  border-left: 11vw solid transparent;
+  border-right: 11vw solid transparent;
+  border-bottom: 15vh solid #2a4470;
+}
+
+.b3-warp {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 80%;
+}
+
+.b3 {
+  width: 15%;
+  height: 80%;
+  background: var(--sky-bg);
+}
+
+.building-4 {
+  position: absolute;
+  height: 70%;
+  width: 20%;
+  right: 5%;
+  bottom: 0%;
+  background: var(--building-4-grad);
+}
+
+.roof4 {
+  position: absolute;
+  left: 9%;
+  top: -10%;
+  width: 80%;
+  height: 10%;
+  z-index: 1;
+  background: var(--building-4-grad);
+}
+
+.atena {
+  position: absolute;
+  width: 3%;
+  height: 10%;
+  top: -18%;
+  left: 45%;
+  z-index: 0;
+  background: var(--building-4-grad);
+}
+
+.win-wrap {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.win {
+  width: 15%;
+  height: 100%;
+  background: var(--sky-bg);
+  }
+
+.building-5 {
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  right: 20%;
+  bottom: 0;
+  z-index: 6;
+  background: var(--building-5-grad);
+  border-top-left-radius: 2%;
+}
+
+.roof5 {
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  top: 55%;
+  left: 65%;
+  z-index: 5;
+  border-radius: 5px;
+  background: var(--roof-blue);
+}
+
+.oval {
+  position: absolute;
+  top: -40%;
+  left: 38%;
+  width: 35%;
+  height: 50%;
+  border-radius: 50%;
+  transform: skew(-35deg);
+  background: var(--antena);
+}
+
+.oval-an {
+  position: absolute;
+  top: -45%;
+  left: 35%;
+  width: 10%;
+  height: 25%;
+  background: var(--antena);
+  transform: rotate(-25deg);
+}
+
+.building-6 {
+  position: absolute;
+  height: 50%;
+  width: 25%;
+  right: 30%;
+  bottom: 0;
+  background: var(--building-6-grad);
+  z-index: 4;
+}
+
+.roof6 {
+  position: absolute;
+  top: -20%;
+  left: 13%;
+  height: 20%;
+  width: 80%;
+  border-radius: 5%;
+  background: var(--building-4-grad);
+  z-index: 3;
+}
+
+.roof6-1 {
+  position: absolute;
+  top: -38%;
+  left: 23%;
+  height: 20%;
+  width: 60%;
+  border-radius: 5%;
+  z-index: 2;
+  background: var(--building-4-grad);
+}
+
+.roof6-2 {
+  position: absolute;
+  top: -46%;
+  left: 32%;
+  height: 10%;
+  width: 40%;
+  border-radius: 5%;
+  z-index: 1;
+  background: var(--building-4-grad);
+}
+
+.win6 {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  width: 50%;
+  height: 70%;
+  background: var(--win-2-color);
+}
+
+@media (min-width: 768px){
+  .neighbourhood {
+    width: 95vw;
+    height: 90vh;
+  }
+  
+  .roof-2 {
+    position: absolute;
+    top: -16%;
+    left: 14%;
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+    border-bottom: 10vh solid #2a4470;
+  }
+}
+
